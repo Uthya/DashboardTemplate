@@ -1,0 +1,65 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .main-container {
+    margin-top: 64px; /* Adjust according to the height of the top bar */
+    height: calc(100vh - 64px);
+  }
+  
+  .sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 250px;
+    transition: width 0.2s;
+  }
+  
+  .sidenav .mat-list-item {
+    white-space: nowrap;
+  }
+  
+  .sidenav mat-icon {
+    margin-right: 10px;
+  }
+  
+  .content {
+    padding: 16px;
+    text-align: center; /* Centering the content */
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .mat-form-field {
+    width: 300px;
+  }
+  
+  .mat-list-item:hover .menu-name {
+    display: block;
+  }
+  
+  .mat-list-item {
+    position: relative;
+  }
+  
+  .menu-name {
+    display: none;
+    position: absolute;
+    left: 50px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+  }
+  
+  .mat-list-item:hover .menu-name {
+    display: block;
+  }
+  

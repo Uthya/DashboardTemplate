@@ -1,0 +1,13 @@
+<mat-nav-list>
+    <mat-list-item *ngFor="let menu of menus">
+      <a mat-list-item (click)="toggleSubmenu(menu)">
+        {{ menu.name }}
+      </a>
+      <mat-nav-list *ngIf="menu.submenus && menu.open">
+        <mat-list-item *ngFor="let submenu of menu.submenus">
+          <a mat-list-item>{{ submenu.name }}</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-list-item>
+  </mat-nav-list>
+  

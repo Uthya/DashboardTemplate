@@ -1,0 +1,21 @@
+.example-container {
+    height: 100%;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .mat-sidenav-container {
+    height: 100%;
+    padding-top: 64px; /* Height of the toolbar */
+  }
+  
